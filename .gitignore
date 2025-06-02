@@ -1,2 +1,21 @@
-.env
+# 環境変数
+*.env
 env/
+
+# データベース
+*.db
+data/
+
+# ログ
+*.log
+
+
+# バイナリ
+*.bin
+
+# キャッシュ
+*.cache
+__pycache__/
+
+
+utils/
