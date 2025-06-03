@@ -4,13 +4,10 @@ from groq import Groq
 from utils.load_env import API_KEY, Groq_model
 from data.tag_list import get_tag_list
 
-# APIキーの取得
-with open(API_KEY) as f:
-    GROQ_API_KEY = f.read()
-
+# APIキーの設定
 client = Groq(
-    api_key=os.environ.get(GROQ_API_KEY)
-    )
+    api_key=API_KEY
+)
 
 tag_list = get_tag_list()
 

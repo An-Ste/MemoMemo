@@ -5,7 +5,7 @@ from datetime import datetime
 
 from utils.load_env import API_URL
 from api.groq_res import generate_word, select_tags
-from tag_list import get_tag_list
+from data.tag_list import get_tag_list
 
 tag_list = get_tag_list()
 
